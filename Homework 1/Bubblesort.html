@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<link rel = "stylesheet" type = "text/css" href = "BubbleSort.css">
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">
+		<link rel = "icon" href = "Icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Kalam:300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/7218cc0d0e.js" crossorigin="anonymous"></script>
+		<script src = "BubbleSort.js"></script>
+		<title>Home</title>
+	</head>
+	<body onload = "createText()">
+		<header class = "banner">
+			<a>Algoritmii de sortare în C++</a>
+			<div class = "Game">
+				<img alt = "#" src = "Bar.png">
+				<img alt = "#" src = "Bar.png">
+				<img alt = "#" src = "Bar.png">
+			</div>
+			<div class = "EasterEgg">
+				<a>...nu chiar toţi.&nbsp;&nbsp;<i class="far fa-laugh-beam"></i></a>
+			</div>
+		</header>
+		<br>
+		<nav class = "navigation_bar" id = "navbar">
+			<a href = "Home.html">Home<i class="fas fa-home"></i></a>
+			<div class = "dropdown">
+				<button class = "dropdown_button current_page">Algoritmi <i class="fas fa-sort-amount-up"></i></button>
+				<div class = "dropdown_content">
+					<a href = "BubbleSort.html" class = "current_page">Bubble Sort</a>
+					<a href = "QuickSort.html">Quick Sort</a>
+				</div>
+			</div>
+			<a href = "Contact.html">Contact <i class="fas fa-address-book"></i></a>
+			<a href = "javascript:void(0);" class = "icon" onClick = "changeToResponsive()"><i class="fas fa-caret-down"></i></a>
+		</nav>
+		<br>
+		<article class = "article">
+			<h1>Bubble Sort</h1>
+			<div class = "mainpage">
+				<h2>Detalii</h2>
+				<a href = "javascript:void(0);" class="fas fa-arrow-up" id = "detailsButton" onClick = "hideShow('details')"></a>
+				<div id = "details">
+					<p>Quicksort-ul este un algoritm de sortare stabil, bazat pe tehnica de programare Divide et Impera, şi care foloseşte comparaţii.</p>
+					<p>Este considerat unul dintre cei mai rapizi algoritmi de sortare, indiferent de datele de intrare.</p>
+					<p>Paşii pe care îi urmează sunt următorii:</p>
+					<ol>
+						<li>Se alege un element ca fiind pivot;</li>
+						<li>Are loc partiţionarea - operaţie ce constă în rearanjarea mulţimii astfel încât toate numerele mai mici decât
+							pivotul vor fi în stânga acestuia, iar cele mai mari în dreapta. La final, pivotul va fi în poziţia lui finală;
+						</li>
+						<li>Se aplică recursiv paşii anteriori pentru submulţimile de elemente din stânga pivotului şi separat pentru cele
+							din dreapta acestuia.
+						</li>
+					</ol>
+				</div>
+			</div>
+			<br>
+			<div class = "mainpage">
+				<h2>Implementare</h2>
+				<a href = "javascript:void(0);" class="fas fa-arrow-down" id = "implementationButton" onClick = "hideShow('implementation')"></a>
+				<div id = "implementation" style = "display: none;">
+					<p>Următoarea secţiune reprezintă implementarea QuickSort-ului având de fiecare dată, ca pivot, ultimul element din sublista curentă.</p>
+					<p>Pentru a copia codul în clipboard, click <a href = "javascipt:void(0);" class = "copyCode" id = "copyCode" onClick = "copycode()">aici</a>.</p>
+					<div class = "code">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class = "mainpage">
+				<h2>Complexităţi</h2>
+				<a href = "javascript:void(0);" class="fas fa-arrow-down" id = "complexitiesButton" onClick = "hideShow('complexities')"></a>
+				<div id = "complexities" style = "display: none;">
+					<p>Complexitatea spaţiu: O(logn);</p>
+					<p>Complexitatea timp:</p>
+					<ol>
+						<li>Worst-case: O(n^2);</li>
+						<li>Average: O(n*log2(n));</li>
+						<li>Best-case: O(n*log2(n)).</li>
+					</ol>
+				</div>
+			</div>
+			<br>
+			<div class = "mainpage">
+				<h2>Analiza complexitatii timp:</h2>
+				<a href = "javascript:void(0);" class="fas fa-arrow-down" id = "giveInputButton" onClick = "hideShow('giveInput')"></a>
+				<div id = "giveInput" style = "display: none;">
+					<p>În următoarea secţiune veţi putea introduce un set de numere întregi şi observa cum se schimbă numărul de paşi în funcţie de numărul de elemente şi de ordinea acestora. :)</p>
+					<p>Pivotul va fi considerat mereu ultimul element din lista de la pasul curent. </p>
+					<div class = "res">
+						<input type = "text" id = "input">
+						<button type = "button" class = "ruleaza" onclick = "addValues();">Sorteaza!</button>
+						<br>
+						<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "initialListButton" onClick = "hideShow('initialList')"></a>
+						<a>Lista data:</a>
+						<a id = "initialList">NaN</a>
+						<br>
+						<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "sortedListButton" onClick = "hideShow('sortedList')"></a>
+						<a>Lista sortata:</a>
+						<a id = "sortedList">NaN</a>
+						<br>
+						<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "numOfElementsButton" onClick = "hideShow('numOfElements')"></a>
+						<a>Numărul de elemente:</a>
+						<a id = "numOfElements">NaN</a>
+						<br>
+						<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "doneOpButton" onClick = "hideShow('doneOp')"></a>
+						<a>Operaţii efectuate:</a>
+						<a id = "doneOp">NaN</a>
+						<br>
+						<br>
+						<div class = "toGroup">
+							<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "bestCaseButton" onClick = "hideShow('bestCase')"></a>
+							<a>Best-case</a>
+							<a id = "bestCase">NaN</a>
+						</div>
+						<div class = "toGroup">
+							<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "averageCaseButton" onClick = "hideShow('averageCase')"></a>
+							<a>Average</a>
+							<a id = "averageCase">NaN</a>
+						</div>
+						<div class = "toGroup">
+							<a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "worstCaseButton" onClick = "hideShow('worstCase')"></a>
+							<a>Worst-case</a>
+							<a id = "worstCase">NaN</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</article>
+	</body>
