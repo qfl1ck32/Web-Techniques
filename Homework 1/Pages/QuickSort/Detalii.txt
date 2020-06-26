@@ -1,0 +1,12 @@
+<p>Quicksort-ul este un algoritm de sortare stabil, bazat pe tehnica de programare Divide et Impera, şi care foloseşte comparaţii.</p>
+<p>Este considerat unul dintre cei mai rapizi algoritmi de sortare, indiferent de datele de intrare.</p>
+<p>Paşii pe care îi urmează sunt următorii:</p>
+<ol>
+	<li>Se alege un element ca fiind pivot;</li>
+	<li>Are loc partiţionarea - operaţie ce constă în rearanjarea mulţimii astfel încât toate numerele mai mici decât
+		pivotul vor fi în stânga acestuia, iar cele mai mari în dreapta. La final, pivotul va fi în poziţia lui finală;
+	</li>
+	<li>Se aplică recursiv paşii anteriori pentru submulţimile de elemente din stânga pivotului şi separat pentru cele
+		din dreapta acestuia.
+	</li>
+</ol>

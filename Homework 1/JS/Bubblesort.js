@@ -1,9 +1,41 @@
 var numbers = [];
 var n = 0;
-var pivot;
+
+var ids = ["Detalii", "Implementare", "Complexitati", "AnalizaComplexitatiiTimp"];
+
+var current = "Detalii";
+
+function dynamic_page() {
+
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    document.getElementById("article").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "Pages/BubbleSort/Detalii.txt", true);
+  xhttp.send();
+
+  for (let i = 0; i < ids.length; ++i) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    let text = this.responseText;
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById(ids[i]).onclick = function() {
+          document.getElementById(current).className -= "current_page";
+          current = ids[i];
+          document.getElementById(current).className += "current_page";
+          document.getElementById("article").innerHTML = text;
+          if (ids[i] == "Implementare")
+            createText();
+        };
+      }
+    };
+    xhttp.open("GET", "Pages/BubbleSort/" + ids[i] + ".txt", true);
+    xhttp.send();
+  }
+}
 
 var BSCode =
-    `void interschimbare(int *a, int *b) {
+`void interschimbare(int *a, int *b) {
 	int aux = *a;
 	*a = *b;
 	*b = aux;
@@ -36,12 +68,15 @@ function changeToResponsive() {
 function hideShow(id) {
     var button = document.getElementById(id + 'Button');
     var text = document.getElementById(id);
+    let message = document.getElementById(id + "Message");
     if (button.className === "fas fa-arrow-up") {
         button.className = "fas fa-arrow-down";
         text.style.display = 'none';
+        message.innerHTML = message.innerHTML.slice(0, -1);
     } else {
         button.className = "fas fa-arrow-up";
         text.style.display = 'inline';
+        message.innerHTML = message.innerHTML + ":";
     }
 }
 

@@ -1,0 +1,8 @@
+<p>Radix Sort-ul este unul dintre puţinii algoritmi de sortare cu o complexitate sub O(n<sup>2</sup>), lucru ce se datorează faptului că nu se folosesc comparaţii.</p>
+<p>Algoritmul se bazează, în principal, pe împărţirea în "găleţi" a elementelor pentru toate cifrele, în ordine crescătoare / descrescătoare.</p>
+<p>Paşii pe care îi urmează sunt următorii:</p>
+<ol>
+  <li>Se determină elementul cel mai mare din listă, pentru a afla numărul maxim de cifre.</li>
+  <li>Împărţim elementele în "găleţi" după fiecare cifră în parte (în codul prezentat, ordinea este de la coadă la cap).</li>
+  <li>Restaurăm numerele în ordinea parcurgerii "găleţilor".</li>
+</ol>

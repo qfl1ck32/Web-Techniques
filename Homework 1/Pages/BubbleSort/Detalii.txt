@@ -1,0 +1,9 @@
+<p>Bubblesort-ul este un algoritm de sortare stabil, bazat pe comparaţii.</p>
+<p>Este unul dintre cei mai uşori algoritmi de înţeles, datorită implementării acestuia, dar şi unul dintre cei mai înceţi în practică.</p>
+<p>Paşii pe care îi urmează sunt următorii:</p>
+<ol>
+  <li>Se parcurge lista de elemente, până la penultimul.</li>
+  <li>Pentru fiecare element ales, parcurgem din nou lista de elemente (de la poziţia elementului ales + 1) şi îl comparăm cu fiecare dintre următorii.</li>
+  <li>Pentru fiecare pereche (i, j) de numere, unde i > j, se realizează o interschimbare.</li>
+</ol>
+<p>Simplu, nu? :)</p>

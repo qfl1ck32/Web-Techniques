@@ -1,0 +1,4 @@
+<p>Următoarea secţiune reprezintă implementarea QuickSort-ului având de fiecare dată, ca pivot, ultimul element din sublista curentă.</p>
+<p>Pentru a copia codul în clipboard, click <a href = "javascript:void(0);" class = "copyCode" id = "copyCode" onClick = "copycode()">aici</a>.</p>
+<div class = "code">
+</div>

@@ -1,0 +1,10 @@
+<p>Spaţiu auxiliar: O(n + 2<sup>k</sup>)</p>
+<p>Complexitatea timp:</p>
+<ol>
+  <li>Worst-case: O(n*k)</li>
+  <li>Average: O(n*k)</li>
+  <li>Best-case: O(n*k)</li>
+</ol>
+
+<p>...unde k este numărul maxim de cifre ale unui număr.</p>
+

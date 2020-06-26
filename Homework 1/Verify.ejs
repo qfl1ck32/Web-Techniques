@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<link rel = "stylesheet" type = "text/css" href = "CSS/Login.css">
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">
+		<link rel = "icon" href = "Images/Icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Kalam:300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/7218cc0d0e.js" crossorigin="anonymous"></script>
+		<script src = "JS/Login.js"></script>
+		<title>Autentificare</title>
+	</head>
+	<body>
+		<header class = "banner">
+			<div class = "wrapper_3">
+				<div class = "navigation_bar login_form">
+					<a href = "/login">Autentificare</a>
+					<a href = "/register">Creare cont</a>
+				</div>
+			</div>
+			<a>Algoritmii de sortare în C++</a>
+			<div class = "Game">
+				<img alt = "#" src = "Images/Bar.png">
+				<img alt = "#" src = "Images/Bar.png">
+				<img alt = "#" src = "Images/Bar.png">
+			</div>
+			<div class = "EasterEgg">
+				<a>...nu chiar toţi.&nbsp;&nbsp;<i class="far fa-laugh-beam"></i></a>
+			</div>
+		</header>
+		<br>
+		<nav class = "navigation_bar" id = "navbar">
+			<a href = "/Home" class = "current_page">Home<i class="fas fa-home"></i></a>
+			<div class = "dropdown">
+				<button class = "dropdown_button">Algoritmi <i class="fas fa-sort-amount-up"></i></button>
+				<div class = "wrapper_2">
+					<div class = "dropdown_content">
+						<a href = "/Bubblesort">Bubble Sort</a>
+						<a href = "/Quicksort">Quick Sort</a>
+						<a href = "/Radixsort">Radix Sort</a>
+					</div>
+				</div>
+			</div>
+			<a href = "/Contact">Contact <i class="fas fa-address-book"></i></a>
+			<a href = "javascript:void(0);" class = "icon" onClick = "changeToResponsive()"><i class="fas fa-caret-down"></i></a>
+		</nav>
+		<br><br>
+		<article class = "article box">
+			<div class = "enhance">
+				<h1>Verificare e-mail</h1>
+			</div>
+			<% if (token_available) { %>
+				<a>Contul <%= email%> a fost activat.</a>
+			<% } else {%>
+                <a>A aparut o eroare, pe undeva.</a>
+            <% } %>
+		</article>
+		<br><br>
+	</body>

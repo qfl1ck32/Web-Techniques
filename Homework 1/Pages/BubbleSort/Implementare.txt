@@ -1,0 +1,4 @@
+<p>Următoarea secţiune reprezintă implementarea Bubblesort-ului.</p>
+<p>Pentru a copia codul în clipboard, click <a href = "javascript:void(0);" class = "copyCode" id = "copyCode" onClick = "copycode()">aici</a>.</p>
+<div class = "code">
+</div>

@@ -1,0 +1,8 @@
+<p>Spaţiu auxiliar: O(1)</p>
+<p>Complexitatea timp:</p>
+<ol>
+  <li>Worst-case: O(n<sup>2</sup>)</li>
+  <li>Average: O(n<sup>2</sup>)</li>
+  <li>Best-case: O(n)</li>
+</ol>
+

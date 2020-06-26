@@ -1,0 +1,40 @@
+<p>În următoarea secţiune veţi putea introduce un set de numere întregi şi observa cum se schimbă numărul de paşi în funcţie de numărul de elemente şi de baza aleasă.</p>
+<p>În primul input se vor da numerele. În cel de-al doilea, baza.</p>
+<div class = "res">
+  <input type = "text" id = "input">
+  <input type = "text" id = "input2">
+  <button type = "button" class = "ruleaza" onclick = "addValues();">Sorteaza!</button>
+  <br>
+  <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "initialListButton" onClick = "hideShow('initialList')"></a>
+  <a id = "initialListMessage">Lista data:</a>
+  <a id = "initialList">NaN</a>
+  <br>
+  <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "sortedListButton" onClick = "hideShow('sortedList')"></a>
+  <a id = "sortedListMessage">Lista sortata:</a>
+  <a id = "sortedList">NaN</a>
+  <br>
+  <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "numOfElementsButton" onClick = "hideShow('numOfElements')"></a>
+  <a id = "numOfElementsMessage">Numărul de elemente:</a>
+  <a id = "numOfElements">NaN</a>
+  <br>
+  <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "doneOpButton" onClick = "hideShow('doneOp')"></a>
+  <a id = "doneOpMessage">Operaţii efectuate:</a>
+  <a id = "doneOp">NaN</a>
+  <br>
+  <br>
+  <div class = "toGroup">
+    <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "bestCaseButton" onClick = "hideShow('bestCase')"></a>
+    <a>Best-case</a>
+    <a id = "bestCase">NaN</a>
+  </div>
+  <div class = "toGroup">
+    <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "averageCaseButton" onClick = "hideShow('averageCase')"></a>
+    <a>Average</a>
+    <a id = "averageCase">NaN</a>
+  </div>
+  <div class = "toGroup">
+    <a href = "javascript:void(0);" class = "fas fa-arrow-up" id = "worstCaseButton" onClick = "hideShow('worstCase')"></a>
+    <a>Worst-case</a>
+    <a id = "worstCase">NaN</a>
+  </div>
+</div>
