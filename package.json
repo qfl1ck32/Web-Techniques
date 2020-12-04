@@ -1,0 +1,21 @@
+{
+  "name": "Web-Techniques",
+  "version": "1.0.0",
+  "description": "- **express** for making server-sided requests easier\r   - **bcrypt** for hashing passwords\r   - **express-flash** for flash messages\r   - **express-session** for... well, login sessions :)\r   - **passport** for the login system\r   - **methodOverride** for sending put/delete requests from client side\r   - **promise** for async functions\r   - **http** for allowing NodeJS to transfer data over HTTP\r   - **socket.io** for the chat page\r   - **multer** for modifying the profile picture\r   - **randomstring** for creating links to confirm the e-mail of a new user\r   - **nodemailer** for sending confirmation e-mails when registering\r   - **mysql** for connecting to the database",
+  "main": "megatest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qfl1ck32/Web-Techniques.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qfl1ck32/Web-Techniques/issues"
+  },
+  "homepage": "https://github.com/qfl1ck32/Web-Techniques#readme"
+}
